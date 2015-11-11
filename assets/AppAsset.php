@@ -26,4 +26,10 @@ class AppAsset extends AssetBundle
         'yii\web\YiiAsset',
         'yii\bootstrap\BootstrapAsset',
     ];
+    public $jsOptions = ['position' => \yii\web\View::POS_HEAD];
+    public function __construct()
+    {
+        //$this->css = [STYLES_PATH.'/site.css', STYLES_PATH.'/main.css'];
+        parent::__construct();
+    }
 }
